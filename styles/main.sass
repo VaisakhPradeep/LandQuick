@@ -1,0 +1,297 @@
+// Colors
+$grey1: #E5E5E5
+$grey2: #C0C0C0
+$grey3: #9F9F9F
+$black: #444444
+$primary-blue: #2E6DFE
+$light-blue: #F3F6FB
+
+// Spacer
+$section-spacer: 5rem
+$section-spacer--large: 12rem
+
+// Typography
+@mixin main-text 
+    font-size: 3rem
+    font-weight: 700
+    color: $black
+@mixin title-text 
+    font-size: 2rem
+    font-weight: 700
+    color: $black
+@mixin body-text
+    font-size: 1.25rem
+    font-weight: 400
+    color: $black
+@mixin body-medium
+    font-size: 1.2rem
+    font-weight: 400
+    color: $black
+@mixin medium-heading
+    font-size: 1.5rem
+    font-weight: 600
+    color: $black
+
+
+// Button
+.btn
+    padding: 12px 40px
+    border-radius: 8px
+    font-weight: 600
+.btn-primary
+    background-color: $primary-blue
+    box-shadow: 0px 18px 40px rgba(46, 109, 254, 0.2)
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus
+    background-color: $primary-blue
+    box-shadow: 0px 10px 10px rgba(46, 109, 254, 0.2)
+.btn-secondary
+    background-color: white
+    color: $black
+    box-shadow: 0px 22px 48px rgba(0, 0, 0, 0.2)
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus
+    background-color: white
+    color: $black
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2)
+
+
+// Badge
+.badge 
+    width: 40px
+    height: 40px
+    background-color: $primary-blue
+    border-radius: 6px
+    flex: none
+    margin-right: 2rem
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+// Graphics
+.square-graphic
+    width: 200px
+    height: 200px
+    border-radius: 12px
+    border: 2px solid $primary-blue
+
+.square-graphic--small
+    width: 100px
+    height: 100px
+
+.bg-rectangle
+    width: 30%
+    padding-top: 30%
+    background-color: $light-blue
+
+
+// Font
+body
+    font-family: 'Source Sans Pro', sans-serif
+    overflow-x: hidden !important
+
+// Nav bar
+
+.navbar
+    border-bottom: 1px solid $grey1
+    font-weight: 600
+.navbar-right
+    width: 150px
+
+// Home
+.home
+    padding-top: 4rem
+    min-height: 100vh
+.home__text
+    margin-top: 5rem
+.home__main-text
+    @include main-text
+    span
+        color: $primary-blue
+.home__sub-text
+    margin: 2rem 0
+    @include body-text
+.home__illustration
+    img
+        width: 100%
+.btn--hero
+    min-width: 200px
+    margin-top: 2rem
+
+// Steps
+.steps__container--margin
+    margin-top: 6rem
+.steps__title
+    @include title-text
+.steps__illustration
+    img
+        width: 300px
+.steps__text
+    position: relative
+    padding-bottom: 6rem
+    padding-left: 80px
+    border-left: 1px dashed $grey1
+    &.no--border
+        border-left: none
+.steps__icon
+    position: absolute
+    left: -20px
+    top: -10px
+.steps__heading
+    @include medium-heading
+.steps__description
+    margin-top: 2.4rem
+    @include body-medium
+
+// Help
+.help
+    margin-top: $section-spacer
+    padding: 8rem 0
+    background: $light-blue
+    position: relative
+.help__main-text
+    text-align: center
+    margin-bottom: 2rem
+    @include main-text
+    span
+        color: $primary-blue
+.help__description
+    @include body-text
+.square-graphic--left
+    position: absolute
+    left: -100px
+    bottom: -100px
+
+// Reviews
+.reviews
+    margin-top: $section-spacer--large
+.container--no-margin-right
+    margin-right: 0
+    padding-right: 0
+.reviews__text
+    padding-right: 4rem
+.reviews__title
+    margin-bottom: 2rem
+    @include title-text
+.reviews__description
+    @include body-medium
+.splide__slide
+    margin: 1rem
+    margin-bottom: 3rem
+    min-height: 200px
+    border: 1px solid $grey1
+    box-sizing: border-box
+    box-shadow: 0px 22px 32px rgba(0, 0, 0, 0.06)
+    border-radius: 8px
+.splide__arrow
+    background: transparent
+    bottom: -2rem
+    top: auto
+.splide__arrow--prev
+    left: auto
+    right: 5rem
+    transform: scale(0.8)
+.splide__arrow--next
+    right: 3rem
+    transform: scale(0.8)
+
+// Contact
+.contact
+    margin-top: $section-spacer--large
+    position: relative
+.contact__title
+    margin-bottom: 2rem
+    @include title-text
+.contact__description
+    @include body-medium
+.contact__detail
+    display: flex
+    align-items: center
+    margin-top: 2rem
+.badge--large
+    width: 60px
+    height: 60px
+    border-radius: 8px
+.contact__text
+    @include body-text
+    font-weight: 700
+.square-graphic--right
+    position: absolute
+    top: -40px
+    right: -40px
+.contact__bg-illustration
+    position: absolute
+    bottom: -80px
+    left: 0
+    z-index: -1
+    img
+        width: 200px
+
+// FAQs
+.faqs
+    margin-top: $section-spacer--large
+    position: relative
+.faqs__label
+    @include body-medium
+    color: $grey2
+.faqs__title
+    margin-bottom: 4rem
+    @include title-text
+.bg-rectangle--right
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+
+// Blog Card
+.blog-card
+    margin-top: $section-spacer
+.blog-card__container
+    background-color: $primary-blue
+    border-radius: 6px
+    padding: 40px 24px  
+    position: relative 
+    overflow: hidden
+.blog-card__main-text
+    @include title-text
+    color: white
+.blog-card__description
+    @include body-medium
+    color: white
+.blog-card__button
+    text-align: right
+.square-graphic--white
+    border: 2px solid white
+.blog-card
+    .square-graphic--right
+        position: absolute
+        top: -40px
+        right: -40px
+    .square-graphic--left
+        position: absolute
+        height: 50px
+        bottom: -20px
+        left: -40px
+
+// Builders action
+.builders-action
+    margin-top: $section-spacer--large
+.builders-action__background-image
+    background-image: url("../images/bg-land.png")
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: right -100px
+    padding: 4rem 0rem
+.builders-action__card
+    background: white
+    padding: 40px 32px
+    border-radius: 6px
+    box-shadow: 0px 22px 68px rgba(0, 0, 0, 0.06)
+.builders-action__label
+    @include body-medium
+    color: $grey2
+.builders-action__title
+    margin-bottom: 2rem
+    @include title-text
+.builders-action__description
+    @include body-medium
+
