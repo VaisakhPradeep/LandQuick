@@ -1,0 +1,172 @@
+// Colors
+$grey1: #E5E5E5
+$grey2: #C0C0C0
+$grey3: #9F9F9F
+$black: #444444
+$primary-blue: #2E6DFE
+$light-blue: #F3F6FB
+
+// Spacer
+$section-spacer: 5rem
+$section-spacer--large: 12rem
+$line-height-title: 2.2rem
+
+// Typography
+@mixin main-text 
+    font-size: 3rem
+    font-weight: 700
+    color: $black
+@mixin title-text 
+    font-size: 2rem
+    font-weight: 700
+    color: $black
+@mixin blog-title 
+    font-size: 1.6rem
+    font-weight: 700
+    color: $black
+@mixin body-text
+    font-size: 1.25rem
+    font-weight: 400
+    color: $black
+@mixin body-medium
+    font-size: 1.2rem
+    font-weight: 400
+    color: $black
+@mixin medium-heading
+    font-size: 1.5rem
+    font-weight: 600
+    color: $black
+@mixin meta-text
+    font-size: 1rem
+    font-weight: 400
+    color: $grey2
+
+// Featured
+.featured
+    margin-top: $section-spacer
+    min-height: 80vh
+    position: relative
+    .bg-rectangle
+        position: absolute
+        top: 30%
+        left: 0
+        z-index: -1
+.featured__image
+    img
+        width: 100%
+.featured__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-top: 2rem
+.featured__main-text
+    margin-top: 0
+    margin-bottom: 2rem
+    cursor: pointer
+    transition: 0.3s all
+    opacity: 1
+    &:hover
+        opacity: 0.8
+    @include title-text
+.featured__sub-text
+    @include body-text
+.featured__meta
+    padding-bottom: 1rem
+.featured__date
+    @include meta-text
+
+// Blogs
+.blogs__container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 100%
+.blogs__article
+    display: flex
+    flex-direction: column
+    margin-bottom: 2rem
+    cursor: pointer
+    transition: 0.3s all
+    opacity: 1
+    &:hover
+        opacity: 0.8
+.blogs__thumbnail
+    img
+        width: 100%
+.blogs__main-text
+    @include blog-title
+    margin-top: 1.2rem
+    margin-bottom: 1.2rem
+    text-overflow: ellipsis
+    overflow: hidden
+    display: -webkit-box !important
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    white-space: normal
+.blogs__sub-text
+    text-overflow: ellipsis
+    overflow: hidden
+    display: -webkit-box !important
+    -webkit-line-clamp: 
+    -webkit-box-orient: vertical
+    white-space: normal
+    @include body-medium
+.blogs__meta
+    padding-bottom: 1rem
+.blogs__date
+    @include meta-text
+
+// Article
+.article__header
+    position: relative
+    min-height: 80vh
+    background-repeat: no-repeat
+    background-size: cover
+    background: url("../images/blog-image-1.png")
+.article__header-container
+    position: absolute
+    margin: auto
+    width: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0,0,0,0.4)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+.article__main-title
+    @include main-text
+    color: white
+    width: 75%
+.article__date
+    @include body-text
+    color: white
+    padding-top: 1rem
+
+// Content
+.article__body
+    margin-top: 6rem
+.article__paragraph
+    @include body-text
+    line-height: 2rem
+    margin: 1rem 0
+.article__h1
+    margin-top: 3rem
+    margin-bottom: 1rem
+    @include title-text
+.article__image
+    img
+        width: 100%
+    
+
+    
+
+
+
+    
+    
+    
+    
