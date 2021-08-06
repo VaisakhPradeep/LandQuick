@@ -182,6 +182,26 @@ body
     box-sizing: border-box
     box-shadow: 0px 22px 32px rgba(0, 0, 0, 0.06)
     border-radius: 8px
+    padding: 1rem
+.reviews__card-heading
+    @include medium-heading
+.reviews__card-body
+    @include body-medium 
+    color: $grey3
+    margin-top: 1rem
+.reviews__card-date
+    margin-top: 2rem
+    color: $grey3
+    font-size: 0.875rem
+.reviews__card-details
+    display: flex
+    justify-content: space-between
+    align-items: center
+.reviews__name
+    @include body-text
+    margin: 0
+
+
 .splide__arrow
     background: transparent
     bottom: -2rem
@@ -295,3 +315,120 @@ body
 .builders-action__description
     @include body-medium
 
+
+// Builders page ----------------------
+
+// Hero
+.builders__header
+    position: relative
+    min-height: 80vh
+    background: url("../images/barnland.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+.builders__header-container
+    position: absolute
+    margin: auto
+    width: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0,0,0,0.4)
+    display: flex
+    flex-direction: column
+    padding: 6rem 0 
+.builders__main-title
+    @include main-text
+    color: white
+    width: 75%
+.builders__sub-title
+    @include body-text
+    color: white
+    padding-top: 1rem
+.builders__cta
+    width: 200px
+    margin-top: 4rem
+
+// Intro
+.builder-intro
+    margin-top: $section-spacer--large
+.builder-intro__main-title
+    @include title-text
+    margin-bottom: 4rem
+.builder-intro__card
+    background: #FFFFFF
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    box-shadow: 0px 22px 68px rgba(0, 0, 0, 0.06)
+    border-radius: 6px
+    display: flex
+    align-items: center
+    padding: 2rem   
+    .badge
+        margin-right: 1rem
+.builder-intro__text
+    @include medium-heading
+    font-size: 1.4rem
+    margin-top: 0.4rem
+.builder-intro__request-info
+    @include body-text
+    text-align: center
+    font-weight: 600
+    text-decoration: underline
+    margin-top: 4rem
+
+// Seller
+.sellers-action__background-image
+    background-image: url("../images/bg-home.png")
+
+// Land Feature
+.land-feature
+    margin-top: $section-spacer
+    padding: 8rem 0
+    background: $light-blue
+    position: relative
+.land-feature__text
+    text-align: center
+.land-feature__title
+    @include title-text
+.land-feature__sub-title
+    @include body-text
+.land-feature__feature
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 4rem
+    text-align: center
+    .badge
+        margin: 0
+        margin-bottom: 1rem
+        width: 48px
+        height: 48px
+    .builder-intro__text
+        font-size: 1.2rem
+
+// Financing
+.financing
+    position: relative
+    margin-top: $section-spacer
+    margin-bottom: $section-spacer--large
+    .contact__bg-illustration
+        left: auto
+        right: 0
+        img
+            width: 300px
+.financing__title
+    @include title-text
+    margin-bottom: 2rem
+.financing__content
+    @include body-medium
+    
+    
+
+// Modal styles ---------------------
+
+.modal button
+    box-shadow: none
+.modal button:hover, .modal button:focus, .modal button:active,
+    box-shadow: none

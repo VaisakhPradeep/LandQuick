@@ -228,6 +228,46 @@ body {
   -webkit-box-shadow: 0px 22px 32px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 22px 32px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  padding: 1rem;
+}
+
+.reviews__card-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.reviews__card-body {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #444444;
+  color: #9F9F9F;
+  margin-top: 1rem;
+}
+
+.reviews__card-date {
+  margin-top: 2rem;
+  color: #9F9F9F;
+  font-size: 0.875rem;
+}
+
+.reviews__card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #444444;
+  margin: 0;
 }
 
 .splide__arrow {
@@ -418,5 +458,195 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   color: #444444;
+}
+
+.builders__header {
+  position: relative;
+  min-height: 80vh;
+  background: url("../images/barnland.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.builders__header-container {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6rem 0;
+}
+
+.builders__main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #444444;
+  color: white;
+  width: 75%;
+}
+
+.builders__sub-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #444444;
+  color: white;
+  padding-top: 1rem;
+}
+
+.builders__cta {
+  width: 200px;
+  margin-top: 4rem;
+}
+
+.builder-intro {
+  margin-top: 12rem;
+}
+
+.builder-intro__main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+  margin-bottom: 4rem;
+}
+
+.builder-intro__card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 22px 68px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 22px 68px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.builder-intro__card .badge {
+  margin-right: 1rem;
+}
+
+.builder-intro__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444444;
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.builder-intro__request-info {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 4rem;
+}
+
+.sellers-action__background-image {
+  background-image: url("../images/bg-home.png");
+}
+
+.land-feature {
+  margin-top: 5rem;
+  padding: 8rem 0;
+  background: #F3F6FB;
+  position: relative;
+}
+
+.land-feature__text {
+  text-align: center;
+}
+
+.land-feature__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+}
+
+.land-feature__sub-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.land-feature__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.land-feature__feature .badge {
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 48px;
+  height: 48px;
+}
+
+.land-feature__feature .builder-intro__text {
+  font-size: 1.2rem;
+}
+
+.financing {
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 12rem;
+}
+
+.financing .contact__bg-illustration {
+  left: auto;
+  right: 0;
+}
+
+.financing .contact__bg-illustration img {
+  width: 300px;
+}
+
+.financing__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+  margin-bottom: 2rem;
+}
+
+.financing__content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.modal button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal button:hover, .modal button:focus, .modal button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */

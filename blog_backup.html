@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/blog_backup.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>LandQuick | Blog</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light mt-3 pb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          LandQuick
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-center mx-auto mb-2 mb-lg-0 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Builders</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right mb-2 mb-lg-0 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Featured -->
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7 featured__image">
+          <img src="images/blog-image-1.png" alt="">
+        </div>
+        <div class="col-12 col-md-5 featured__text pr-md-3">
+          <div>
+            <h1 class="featured__main-text">The Keys to Buying a Land, as Told by Long-Time Builders</h1>
+            <p class="featured__sub-text">Find and buy lands perfect for your development needs </p>
+          </div>
+          <div class="featured__meta">
+            <span class="featured__date">June 16, 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-rectangle"></div>
+  </section>
+
+  <!-- Blogs -->
+  <section class="blogs">
+    <div class="container">
+      <div class="blogs__container row justify-content-center">
+        <div class="blogs__article col-12 col-md-6 col-lg-5" onclick="javascript:location.href='/LandQuick/article.html'">
+          <div class="blogs__thumbnail">
+            <img src="images/blog-image-2.png" alt="">
+          </div>
+          <div>
+            <h1 class="blogs__main-text">10 ways to sell your home within a day </h1>
+            <p class="blogs__sub-text">Here are top 10 ways followed by industry experts to sell homes before you know
+              it.</p>
+          </div>
+          <div class="blogs__meta">
+            <span class="blogs__date">June 16, 2021</span>
+          </div>
+        </div>
+        <div class="blogs__article col-12 col-md-6 col-lg-5" onclick="javascript:location.href='/LandQuick/article.html'">
+          <div class="blogs__thumbnail">
+            <img src="images/blog-image-3.png" alt="">
+          </div>
+          <div>
+            <h1 class="blogs__main-text">Things to take care of when you buy a new house</h1>
+            <p class="blogs__sub-text">Buying  a new home is a dream come true. It enables you unlock new opportunities in life.
+              it.</p>
+          </div>
+          <div class="blogs__meta">
+            <span class="blogs__date">June 16, 2021</span>
+          </div>
+        </div>
+        <div class="blogs__article col-12 col-md-6 col-lg-5" onclick="javascript:location.href='/LandQuick/article.html'">
+          <div class="blogs__thumbnail">
+            <img src="images/blog-image-4.png" alt="">
+          </div>
+          <div>
+            <h1 class="blogs__main-text">Top places in North America with incredible land values </h1>
+            <p class="blogs__sub-text">Top places in North America with incredible</p>
+          </div>
+          <div class="blogs__meta">
+            <span class="blogs__date">June 16, 2021</span>
+          </div>
+        </div>
+        <div class="blogs__article col-12 col-md-6 col-lg-5" onclick="javascript:location.href='/LandQuick/article.html'">
+          <div class="blogs__thumbnail">
+            <img src="images/blog-image-5.png" alt="">
+          </div>
+          <div>
+            <h1 class="blogs__main-text">Choosing the perfect land for your next project</h1>
+            <p class="blogs__sub-text">There are plenty of things to consider before you buy a land for your construction project.
+              it.</p>
+          </div>
+          <div class="blogs__meta">
+            <span class="blogs__date">June 16, 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
