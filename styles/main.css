@@ -687,5 +687,9 @@ body {
   .builder-intro__card {
     margin-bottom: 1rem;
   }
+  .modal-dialog-centered {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
