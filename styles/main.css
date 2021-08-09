@@ -642,6 +642,24 @@ body {
   color: #444444;
 }
 
+footer {
+  background: #F3F6FB;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+
+.footer__corp {
+  color: #9F9F9F;
+}
+
+.footer__name {
+  color: #2E6DFE;
+}
+
+.footer__links {
+  cursor: pointer;
+}
+
 .modal button {
   -webkit-box-shadow: none;
           box-shadow: none;
