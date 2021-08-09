@@ -87,7 +87,9 @@ $section-spacer--large: 12rem
 // Font
 body
     font-family: 'Source Sans Pro', sans-serif
+    width: 100vw
     overflow-x: hidden !important
+    font-size: 16px
 
 // Nav bar
 
@@ -96,6 +98,7 @@ body
     font-weight: 600
 .navbar-right
     width: 150px
+
 
 // Home
 .home
@@ -432,3 +435,36 @@ body
     box-shadow: none
 .modal button:hover, .modal button:focus, .modal button:active,
     box-shadow: none
+
+
+
+// Media Queries -----------------------
+
+@media screen and (max-width: 960px)
+    .navbar-collapse
+        margin-top: 2rem
+
+@media screen and (max-width: 540px)
+    html
+        font-size: 14px
+        overflow-x: hidden
+    .steps__container
+        margin-top: 3rem
+        margin-left: 1rem
+    .steps__text
+        padding-left: 40px
+        padding-bottom: 3rem
+        margin-top: 2rem
+        .badge
+            margin-right: 0
+    .reviews__text
+        padding-right: 0
+    .splide__arrows
+        display: none
+    .square-graphic--right
+        display: none
+    .builder-intro__card
+        margin-bottom: 1rem
+
+
+    
